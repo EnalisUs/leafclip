@@ -1,0 +1,9 @@
+torch
+transformers
+streamlit
+timm
+numpy
+Pillow
+json
+torchvision
+gdown

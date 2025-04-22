@@ -8,7 +8,7 @@ class ImageEncoder(nn.Module):
     def __init__(self):
         super(ImageEncoder, self).__init__()
         # Load the Swin Transformer with features_only=True
-        self.swin = create_model("swin_base_patch4_window7_224", pretrained=True, features_only=True)
+        self.swin = create_model("swin_base_patch4_window7_224", pretrained=True, features_only=True,force_download=True)
         for param in self.swin.parameters():
             param.requires_grad = True
 

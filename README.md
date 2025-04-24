@@ -28,3 +28,4 @@ LeafNetV2 is a large-scale, curated dataset for multi-class leaf disease classif
 - 🔗 **Training Objective**: Contrastive learning using InfoNCE loss on aligned image-text pairs
 
 ---
+## Demo in [here](https://leafclip.streamlit.app/)

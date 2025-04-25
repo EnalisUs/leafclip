@@ -51,7 +51,7 @@ def predict_image_v2(model, image_path, meta_path, top_k=5):
 
     # Compute similarity scores and convert to probabilities
     similarity_scores = torch.matmul(image_features_norm, text_features_norm.T).squeeze(0)
-    similarity_scores = similarity_scores / 0.07
+    similarity_scores = similarity_scores / 0.01
     probabilities = F.softmax(similarity_scores, dim=0)
 
     # Get top-k predictions

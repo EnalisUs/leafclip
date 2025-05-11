@@ -27,7 +27,7 @@ st.title("🌿 Leaf Disease Image-to-Text Classification")
 
 # Upload section
 meta_path = "class_description.json"
-uploaded_file = st.file_uploader("Upload a leaf image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload a leaf image", type=["jpg", "jpeg", "png","JPG"])
 top_k = st.slider("Select number of top predictions (K)", min_value=1, max_value=20, value=10)
 
 # Layout: 2 Columns
